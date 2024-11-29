@@ -23,12 +23,12 @@ func snippetView(w http.ResponseWriter, r *http.Request) {
 }
 
 // Add a snippetCreate handler function.
-func snippetCreate(w http.ResponseWriter, r *http.Request) {
+func getsnippetCreate(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("Display a form for creating a new snippet..."))
 }
 
 // Add a snippetCreatePost handler function.
-func snippetCreatePost(w http.ResponseWriter, r *http.Request) {
+func getsnippetCreatePost(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("Save a new snippet"))
 }
 

@@ -13,8 +13,8 @@ func home(w http.ResponseWriter, r *http.Request) {
 
 	files := []string{
 		"./ui/html/base.html",
-		"./ui/html/pages/home.html",
 		"./ui/html/partials/nav.html",
+		"./ui/html/pages/home.html",
 	}
 
 	ts, err := template.ParseFiles(files...)

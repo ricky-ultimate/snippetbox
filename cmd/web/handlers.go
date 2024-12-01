@@ -43,7 +43,7 @@ func (app *application) snippetView(w http.ResponseWriter, r *http.Request) {
 }
 
 // Add a snippetCreate handler function.
-func getSnippetCreate(w http.ResponseWriter, r *http.Request) {
+func (app *application) getSnippetCreate(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("Display a form for creating a new snippet..."))
 }
 

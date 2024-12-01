@@ -48,7 +48,7 @@ func (app *application) getSnippetCreate(w http.ResponseWriter, r *http.Request)
 }
 
 // Add a snippetCreatePost handler function.
-func postSnippetCreate(w http.ResponseWriter, r *http.Request) {
+func (app *application) postSnippetCreate(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusCreated)
 	w.Write([]byte("Save a new snippet"))
 }
